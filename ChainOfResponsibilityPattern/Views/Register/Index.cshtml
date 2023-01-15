@@ -1,0 +1,31 @@
+﻿@model UserRegisterVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<br />
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Üye Adı:</label>
+        <input type="text" asp-for="Name" class="form-control" />
+        <br />
+        <label>Üye Soyadı:</label>
+        <input type="text" asp-for="Surname" class="form-control" />
+        <br />
+        <label>Üye Kullanıcı Adı:</label>
+        <input type="text" asp-for="Username" class="form-control" />
+        <br />
+        <label>Üye Maili:</label>
+        <input type="text" asp-for="Mail" class="form-control" />
+        <br />
+        <label>Üye Şifresi:</label>
+        <input type="password" asp-for="Password" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Üyeyi Kaydet</button>
+    </form>
+</div>
+
+

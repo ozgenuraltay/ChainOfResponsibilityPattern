@@ -1,0 +1,23 @@
+﻿@model UserLoginVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<br />
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Kullanıcı Adı:</label>
+        <input type="text" asp-for="UserName" class="form-control" />
+        <br />
+        <label>Şifre:</label>
+        <input type="password" asp-for="Password" class="form-control" />
+        <br />
+        <button class="btn btn-dark">Giriş Yap</button>
+        <br />
+        <p>Hesabın yok mu? Hemen <a href="/Register/Index">Oluştur!</a></p>
+    </form>
+</div>
